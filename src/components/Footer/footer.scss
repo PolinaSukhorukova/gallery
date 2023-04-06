@@ -1,0 +1,46 @@
+.footer {
+  background-color: #FEE251;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__rights {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  &__socials {
+    box-sizing: border-box;
+    max-width: 360px;
+    padding-right: 10px;
+    text-align: right;
+
+    @media (min-width: 640px) {
+      padding-right: 40px;
+    }
+
+    @media (min-width: 768px) {
+      padding-right: 120px;
+    }
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    padding: 5px;
+
+    @media (min-width: 640px) {
+      margin-right: 20px;
+      padding: 7px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
